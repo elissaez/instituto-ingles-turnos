@@ -27,8 +27,9 @@ Lovable trabaja con proyectos React + Vite + Tailwind como este. Subí la carpet
 
 ## URL de previsualización
 
-- Vista previa: _(completar con la URL de Lovable o del hosting cuando se publique)_
-- Mientras tanto se puede ver con `npm run dev` o `npm run preview`.
+- **Vista previa: https://elissaez.github.io/instituto-ingles-turnos/**
+- Se publica sola con GitHub Actions (`.github/workflows/deploy.yml`) cada vez que se sube algo a `main`: instala, corre `npm test`, arma `dist/` y lo publica en GitHub Pages. Si las pruebas fallan, no se publica.
+- Localmente: `npm run dev` o `npm run preview`.
 
 ---
 
