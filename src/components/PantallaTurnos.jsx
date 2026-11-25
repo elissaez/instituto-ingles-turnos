@@ -172,7 +172,7 @@ export default function PantallaTurnos({ reservas, onReservar, irAMiTurno, almac
                 className={`rounded-xl border p-3 text-left transition ${activo ? 'border-marca-600 bg-marca-50 ring-2 ring-marca-500' : 'border-slate-200 hover:border-marca-500'}`}
               >
                 <span className="block font-semibold text-slate-900">{t.nombre}</span>
-                <span className="block text-sm text-slate-600">{t.destinatarios} · de {t.edad.min} a {t.edad.max} años</span>
+                <span className="block text-sm text-slate-600">Edad: de {t.edad.min} a {t.edad.max} años</span>
                 <span className="mt-1.5 flex flex-wrap gap-1.5 text-xs">
                   <span className="rounded-full bg-slate-100 px-2 py-0.5">{t.duracionMin} min</span>
                   <span className="rounded-full bg-slate-100 px-2 py-0.5">{precioTexto(t.precio)}</span>

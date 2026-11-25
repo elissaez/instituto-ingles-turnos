@@ -6,7 +6,7 @@ export function precioTexto(precio) {
 }
 
 export function capacidadTexto(tipo) {
-  return tipo.unidad === 'persona' ? '1 persona por horario' : `Grupo de hasta ${tipo.cupo} personas`
+  return tipo.unidad === 'persona' ? 'Cupo: 1 persona por horario' : `Cupo: ${tipo.cupo} personas por clase`
 }
 
 export function horarioTexto(reserva, tipo) {

@@ -44,6 +44,5 @@ export function hayFranjasLibres(dias) {
 
 export function etiquetaLibres(franja, tipo) {
   if (franja.completo) return 'Completo'
-  if (tipo.unidad === 'persona') return 'Libre'
   return franja.libres === 1 ? '1 lugar libre' : `${franja.libres} lugares libres`
 }

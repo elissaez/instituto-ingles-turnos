@@ -51,8 +51,7 @@ export const NIVELES = ['Nunca estudié', 'Básico', 'Intermedio', 'Avanzado']
 export const TIPOS = [
   {
     id: 'prueba-nivel',
-    nombre: 'Prueba de nivel',
-    destinatarios: 'Adultos y adolescentes',
+    nombre: 'Prueba de nivel adultos y adolescentes',
     descripcion: 'Una charla corta y un ejercicio escrito para saber en qué curso empezar.',
     duracionMin: 30,
     precio: 0,
@@ -64,8 +63,7 @@ export const TIPOS = [
   },
   {
     id: 'entrevista-chicos',
-    nombre: 'Entrevista para chicos',
-    destinatarios: 'Chicos',
+    nombre: 'Entrevista para chicos de 6 a 11',
     descripcion: 'Encuentro con la familia y un juego en inglés para ubicar al chico en su grupo.',
     duracionMin: 20,
     precio: 0,
@@ -78,14 +76,13 @@ export const TIPOS = [
   {
     id: 'clase-muestra',
     nombre: 'Clase de muestra de conversación',
-    destinatarios: 'Adolescentes y adultos',
     descripcion: 'Una clase grupal real de conversación para conocer el método y al profe.',
     duracionMin: 60,
     precio: 5000,
     unidad: 'grupo',
     cupo: 4,
     edad: { min: 12, max: 80 },
-    diasSemana: [1, 3, 5],
+    diasSemana: [1, 2, 3, 4, 5],
     horarios: ['18:30', '19:30'],
   },
 ]
@@ -94,8 +91,8 @@ export const TIPOS = [
 //  RESERVAS DE EJEMPLO
 //  Se cargan la primera vez que se abre la app y cada vez que se
 //  toca «Restablecer datos de ejemplo».
-//  - dia: posición dentro de las franjas del TIPO (0 = primer día
-//    en que ese tipo tiene franjas). Así siempre caen en fechas futuras.
+//  - dia: posición dentro de los próximos días hábiles en que ese TIPO
+//    tiene franjas (0 = el primero). Así siempre caen en fechas futuras.
 //  - hora: tiene que ser uno de los `horarios` del tipo.
 //  Contenido: una clase de muestra COMPLETA (4 de 4), una franja de
 //  prueba de nivel ya tomada y otra clase de muestra con 1 de 4.
